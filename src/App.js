@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Acceuil from './pages/Acceuil';
+import {Acceuil} from './pages/Acceuil';
 
 export default function App() {
   return (
