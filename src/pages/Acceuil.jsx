@@ -6,6 +6,7 @@ import Contact from "../components/Contact";
 import Competences from "../components/Competences.jsx";
 import Langues from "../components/Langues.jsx";
 import CentreInteret from "../components/CentreInteret.jsx";
+import ExperiencePro from "../components/ExperiencePro.jsx";
 
 export function Acceuil() {
   // const fTitre = [{"Année":2021,"Etablissement":"Pau","Diplôme":"Lorem ipsum dolor sit amet consectetur adipisicing elit."},
@@ -76,6 +77,7 @@ export function Acceuil() {
               </div>
             <div className="bg-[#000000] h-[1px] w-[100%]"/>
           </div>
+          <ExperiencePro/>
           {/* <Formation/> */}
         </div>
       </main>
