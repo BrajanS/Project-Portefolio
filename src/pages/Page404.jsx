@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ExperiencePro() {
+export default function Page404() {
   return (
     <div>
         
