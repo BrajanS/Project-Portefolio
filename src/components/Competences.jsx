@@ -9,7 +9,7 @@ export default function Competences() {
     async function getCompetences(){
         const reponse = await fetch(URL)
         const data = await reponse.json()
-        console.log("Data competences: ",data);
+        // console.log("Data competences: ",data);
         setCompetences(data)
     }
 
