@@ -4,6 +4,8 @@ import AdminCompetences from '../components/admin/AdminCompetences'
 import AdminLangues from '../components/admin/AdminLangues'
 import Login from './Login'
 import AdminCentreInterets from '../components/admin/AdminCentreInterets'
+import AdminExperiencePro from '../components/admin/AdminExperiencePro'
+import AdminFormation from '../components/admin/AdminFormation'
 
 export default function Admin() {
   const [username,setUsername] = useState('')
@@ -25,7 +27,7 @@ export default function Admin() {
   }
   else{
     return (
-      <div className='ml-[7px] flex gap-5'>
+      <div className='mx-[7px] flex justify-around'>
         <div>
           <AdminContact/>
           <AdminCompetences/>
@@ -33,6 +35,10 @@ export default function Admin() {
         <div>
           <AdminLangues/>
           <AdminCentreInterets/>
+        </div>
+        <div>
+          <AdminExperiencePro/>
+          <AdminFormation/>
         </div>
       </div>
     )
