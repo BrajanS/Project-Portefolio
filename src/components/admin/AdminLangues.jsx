@@ -62,6 +62,7 @@ export default function AdminLangues() {
         setBool(!bool)
         if(bool === false){
           setLangVal1('')
+          setLangVal2('')
         }
     }
 

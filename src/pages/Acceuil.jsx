@@ -9,9 +9,6 @@ import CentreInteret from "../components/CentreInteret.jsx";
 import ExperiencePro from "../components/ExperiencePro.jsx";
 
 export function Acceuil() {
-  // const fTitre = [{"Année":2021,"Etablissement":"Pau","Diplôme":"Lorem ipsum dolor sit amet consectetur adipisicing elit."},
-  //   {"Année":2023,"Etablissement":"Pau","Diplôme":"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
-  // ];
   return (
     <div>
       <main className="flex gap-5 mt-5">
@@ -29,10 +26,7 @@ export function Acceuil() {
             </div>
           </div>
           <div>
-            <h2
-              className="text-[white] text-[20px] rounded-[5px]
-                 font-[700] bg-[#0d0d85] text-center"
-            >
+            <h2 className="text-[white] text-[20px] rounded-[5px] font-[700] bg-[#0d0d85] text-center">
               Compétences
             </h2>
             <div className="flex">
@@ -57,28 +51,8 @@ export function Acceuil() {
           </div>
         </div>
         <div id="CV" className="w-[100%] mr-5 text-center">Curriculum Vitae
-          <div className="flex flex-col">
-              <h2 className="text-[white] text-[20px] rounded-[5px] font-[700] bg-[#0d0d85] text-center">
-                Expérience Professionnelles
-              </h2>
-              <div className="flex text-start">
-                <div className="flex flex-col w-[120px]">
-                  <span>Année</span>
-                  <span>Entreprise</span>
-                  <span>Poste</span>
-                  <span>Mission</span>
-                </div>
-                <div className="flex flex-col text-start">
-                  <span>2020 - 2021</span>
-                  <span>entreprise 1</span>
-                  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                </div>
-              </div>
-            <div className="bg-[#000000] h-[1px] w-[100%]"/>
-          </div>
           <ExperiencePro/>
-          {/* <Formation/> */}
+          <Formation/>
         </div>
       </main>
     </div>

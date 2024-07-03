@@ -3,6 +3,7 @@ import AdminContact from '../components/admin/AdminContact'
 import AdminCompetences from '../components/admin/AdminCompetences'
 import AdminLangues from '../components/admin/AdminLangues'
 import Login from './Login'
+import AdminCentreInterets from '../components/admin/AdminCentreInterets'
 
 export default function Admin() {
   const [username,setUsername] = useState('')
@@ -17,7 +18,7 @@ export default function Admin() {
       alert('Login incorrecte')
     }
   }
-  if(!isLogged){
+  if(isLogged !== false){
     return (
       <Login username={username} password={password} setUserName={(e)=>setUsername(e.target.value)} setPassword={(e)=>setPassword(e.target.value)} handleSubmit={handleSubmit}/>
     )
@@ -31,6 +32,7 @@ export default function Admin() {
         </div>
         <div>
           <AdminLangues/>
+          <AdminCentreInterets/>
         </div>
       </div>
     )
