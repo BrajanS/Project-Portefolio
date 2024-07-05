@@ -7,7 +7,7 @@ export default function Competences() {
     const [competences,setCompetences] = useState()
 
     async function getCompetences(){
-        const reponse = await fetch(URL)
+        const reponse = await fetch(`${URL}/competences`)
         const data = await reponse.json()
         // console.log("Data competences: ",data);
         setCompetences(data)

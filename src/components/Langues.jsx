@@ -5,7 +5,7 @@ export default function Langues() {
     const [langues,setLangues] = useState([])
 
     async function fetchLangues(){
-        const obtainLangues = await fetch(URL)
+        const obtainLangues = await fetch(`${URL}/langues`)
         const data = await obtainLangues.json()
         console.log("Langue data: ",data);
         setLangues(data)

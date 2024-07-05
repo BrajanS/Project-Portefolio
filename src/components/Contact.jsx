@@ -7,9 +7,14 @@ export default function Contact() {
     const [contact,setContact] = useState()
 
     async function getContact() {
-        const reponse = await fetch(`${URL}/contact`)
-        const data = await reponse.json()
-        setContact(data[0])
+        try {
+            const reponse = await fetch(`${URL}/contact`)
+            const data = await reponse.json()
+            setContact(data[0])
+        } catch (error) {
+            console.log(error.message);
+        }
+        
     }
 
     useEffect(()=>{
