@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
 
-const URL = "http://localhost:4000/competences"
+const URL = "https://project-portefolio-backend.onrender.com"
 
 export default function Competences() {
     const [competences,setCompetences] = useState()

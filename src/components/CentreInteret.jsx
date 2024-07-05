@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 
-const URL = "http://localhost:4000"
+const URL = "https://project-portefolio-backend.onrender.com"
 
 export default function CentreInteret() {
   const [ci,setCi] = useState([])

@@ -5,7 +5,7 @@ import { MdAddBox } from "react-icons/md";
 import { CgRemoveR } from "react-icons/cg";
 
 
-const URL = "http://localhost:4000"
+const URL = "https://project-portefolio-backend.onrender.com"
 export default function AdminLangues() {
     const [langue,setLangue] = useState([])
     const [langVal1,setLangVal1] = useState()

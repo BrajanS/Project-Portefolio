@@ -7,7 +7,7 @@ import { CgRemoveR } from "react-icons/cg";
 import { BsFillInfoCircleFill } from "react-icons/bs";
 import { enqueueSnackbar } from "notistack";
 
-const URL = "http://localhost:4000";
+const URL = "https://project-portefolio-backend.onrender.com";
 export default function AdminExperiencePro() {
   const [expPro, setExpPro] = useState([]);
   const [expProVal1, setExpProVal1] = useState();
@@ -124,7 +124,7 @@ export default function AdminExperiencePro() {
         {bool && (
           <div className="flex gap-2">
             <CgRemoveR size={22} color="red" />
-            <h2>Ajouter une Formation:</h2>
+            <h2>Ajouter une Experience Professionnelle:</h2>
           </div>
         )}
       </button>
@@ -207,6 +207,15 @@ export default function AdminExperiencePro() {
                       </label>
                       <span className="ml-[10px]" id="idMission">
                         {item.Mission}
+                      </span>
+                      <label
+                        className="font-bold text-center text-[25px] underline"
+                        htmlFor="idMission"
+                      >
+                        ID:
+                      </label>
+                      <span className="ml-[10px]" id="idMission">
+                        {item._id}
                       </span>
                     </div>
                   )}

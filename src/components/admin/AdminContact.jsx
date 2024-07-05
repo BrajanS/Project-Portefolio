@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
+const URL = "https://project-portefolio-backend.onrender.com"
 export default function AdminContact() {
     const [nom,setNom] = useState('')
     const [prenom,setPrenom] = useState('')
@@ -8,7 +9,7 @@ export default function AdminContact() {
     const [adresse,setAdresse] = useState('')
 
     async function fetchContact(){
-        const response = await fetch("http://localhost:4000/contact")
+        const response = await fetch(`${URL}/contact`)
         const data = await response.json()
         // console.log("Admin Contact: ",data);
         setTel(data[0].tel)
@@ -23,7 +24,7 @@ export default function AdminContact() {
 
     function submit(clicked){
         clicked.preventDefault()
-        fetch('http://localhost:4000/contact',{
+        fetch(`${URL}/contact`,{
             method: 'POST',
             headers: {"Content-Type":"application/json"},
             body: JSON.stringify({nom,prenom,tel,email,adresse})

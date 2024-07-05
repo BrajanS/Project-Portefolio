@@ -6,7 +6,7 @@ import { MdAddBox } from "react-icons/md";
 import { CgRemoveR } from "react-icons/cg";
 import { enqueueSnackbar } from 'notistack';
 
-const URL = "http://localhost:4000"
+const URL = "https://project-portefolio-backend.onrender.com"
 export default function AdminCompetences() {
   const [competences,setCompetences] = useState([])
   const [compVal,setCompVal] = useState()

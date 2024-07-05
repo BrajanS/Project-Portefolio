@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const URL = "http://localhost:4000/langues"
+const URL = "https://project-portefolio-backend.onrender.com"
 export default function Langues() {
     const [langues,setLangues] = useState([])
 

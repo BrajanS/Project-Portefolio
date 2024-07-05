@@ -5,7 +5,7 @@ import { MdDeleteForever } from "react-icons/md";
 import { MdAddBox } from "react-icons/md";
 import { CgRemoveR } from "react-icons/cg";
 
-const URL = "http://localhost:4000";
+const URL = "https://project-portefolio-backend.onrender.com";
 export default function AdminCentreInterets() {
   const [ci, setCi] = useState([]);
   const [ciVal, setCiVal] = useState();
