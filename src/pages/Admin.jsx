@@ -20,7 +20,7 @@ export default function Admin() {
       alert('Login incorrecte')
     }
   }
-  if(isLogged !== false){
+  if(!isLogged){
     return (
       <Login username={username} password={password} setUserName={(e)=>setUsername(e.target.value)} setPassword={(e)=>setPassword(e.target.value)} handleSubmit={handleSubmit}/>
     )

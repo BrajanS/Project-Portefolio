@@ -33,7 +33,7 @@ export default function AdminContact() {
         .then(data => console.log(data))
     }
   return (
-    <form onSubmit={submit} className='flex flex-col w-[400px] mb-5 gap-2 p-[5px] rounded-[5px] bg-[#eeeeee90]' style={{border:'2px solid black'}}>
+    <form onSubmit={submit} className='flex flex-col w-[400px] mb-5 gap-2 p-[5px] rounded-[5px] bg-[#eeeeee90]' style={{border:'2px solid black',boxShadow:"5px 5px 10px 0px #000000BB"}}>
         <h2 className='text-[30px] font-[700] text-[blue] text-center bg-[#dddddd] rounded-[30px] border-solid border-[3px] border-[#bbbbbb]'>CONTACT</h2>
         <label htmlFor="ac1">Tel:</label>
         <input className='bg-[#DDDDDD] pl-[5px]' id='ac1' style={{border: "1px solid black"}} onChange={(e)=>{setTel(e.target.value)}} value={tel} type="text" />

@@ -71,7 +71,7 @@ export default function AdminCentreInterets() {
     }
   }
   return (
-    <div className="w-[400px] p-[5px] rounded-[5px] bg-[#eeeeee90] mb-5" style={{ border: "2px solid black" }}>
+    <div className="w-[400px] p-[5px] rounded-[5px] bg-[#eeeeee90] mb-5" style={{ border: "2px solid black",boxShadow:"5px 5px 10px 0px #000000BB" }}>
         <h2 className="mb-2 text-[24px] font-[700] text-[blue] text-center bg-[#dddddd] rounded-[30px] border-solid border-[3px] border-[#bbbbbb]">
             Gérer le Centre d'intérêts
         </h2>

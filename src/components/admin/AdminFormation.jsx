@@ -105,7 +105,7 @@ export default function AdminFormation() {
    }
   // ---------------------//-------------------------//---------------------------//------------------------//
   return (
-    <div className='w-[400px] flex flex-col gap-2 p-[5px] rounded-[5px] bg-[#eeeeee90] mb-5' style={{border:'2px solid black'}}>
+    <div className='w-[400px] flex flex-col gap-2 p-[5px] rounded-[5px] bg-[#eeeeee90] mb-5' style={{border:'2px solid black',boxShadow:"5px 5px 10px 0px #000000BB"}}>
       <h2 className='text-[24px] font-[700] text-[blue] text-center bg-[#dddddd] rounded-[30px] border-solid border-[3px] border-[#bbbbbb]'>Gérer les Formations</h2>
       <button id="addCompBtn" onClick={() => { switchClick(); }}>
         {!bool && <MdAddBox size={24} color="blue" />}
@@ -165,7 +165,7 @@ export default function AdminFormation() {
                   <BsFillInfoCircleFill key={key} size={20} color="blue" className="z-0"/>
                   {hoveredIndex === key && (
                     <div
-                      className="flex flex-col absolute left-[-403px] top-[25px]
+                      className="flex flex-col absolute left-[-387px] top-[20px]
                         w-[400px] bg-[#333333] text-[white] p-[5px] rounded-[10px] text-center z-[1]"
                       style={{ border: "1px solid black" }}
                     >

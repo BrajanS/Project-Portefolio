@@ -115,7 +115,7 @@ export default function AdminExperiencePro() {
   };
 
   return (
-    <div className="w-[400px] flex flex-col gap-2 p-[5px] rounded-[5px] bg-[#eeeeee90] mb-5" style={{ border: "2px solid black" }}>
+    <div className="w-[400px] flex flex-col gap-2 p-[5px] rounded-[5px] bg-[#eeeeee90] mb-5" style={{ border: "2px solid black",boxShadow:"5px 5px 10px 0px #000000BB" }}>
       <h2 className="text-[24px] font-[700] text-[blue] text-center bg-[#dddddd] rounded-[30px] border-solid border-[3px] border-[#bbbbbb]">
         Gérer les Expériences Pro
       </h2>
