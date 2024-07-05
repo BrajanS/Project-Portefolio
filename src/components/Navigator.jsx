@@ -16,6 +16,7 @@ export default function Navigator() {
           </div>
           <div className="Links flex gap-4">
             <Link className="font-[700]" to="/">Acceuil</Link>
+            <Link className='font-[700]' to="/myPortfolio">Portfolio</Link>
             <Link className="text-[Blue] font-[700]" to="/admin">Admin</Link>
           </div>
         </nav>
