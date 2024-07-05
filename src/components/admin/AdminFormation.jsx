@@ -93,8 +93,16 @@ export default function AdminFormation() {
     }
   }
 
-  const handleHover = (index)=>{ setHoveredIndex(index); }
-  const handleMouseLeave = ()=>{ setHoveredIndex(null); }
+  const handleHover = (index)=>{
+    setHoveredIndex(index);
+    const body = document.querySelector('body')
+    body.style.height = "110%"
+  }
+  const handleMouseLeave = ()=>{ 
+    setHoveredIndex(null);
+    const body = document.querySelector('body')
+    body.style.height = "100%"
+   }
   // ---------------------//-------------------------//---------------------------//------------------------//
   return (
     <div className='w-[400px] flex flex-col gap-2 p-[5px] rounded-[5px] bg-[#eeeeee90] mb-5' style={{border:'2px solid black'}}>
