@@ -96,7 +96,7 @@ export default function AdminFormation() {
   const handleHover = (index)=>{
     setHoveredIndex(index);
     const body = document.querySelector('body')
-    body.style.height = "110%"
+    body.style.height = "120%"
   }
   const handleMouseLeave = ()=>{ 
     setHoveredIndex(null);
