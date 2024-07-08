@@ -27,7 +27,7 @@ export default function Admin() {
   }
   else{
     return (
-      <div className='mx-[7px] flex justify-around'>
+      <div className='mx-[7px] mb-2 flex justify-around'>
         <div>
           <AdminContact/>
           <AdminCompetences/>
