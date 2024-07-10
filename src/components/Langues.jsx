@@ -14,7 +14,7 @@ export default function Langues() {
 
     useEffect(()=>{
         fetchLangues()
-    },[])
+    })
   return (
     <div>
         <div>

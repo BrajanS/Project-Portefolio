@@ -12,6 +12,9 @@ export default function Admin() {
   const [password,setPassword] = useState('')
   const [isLogged,setIsLogged] = useState(false)
 
+  localStorage.setItem("USERNAME","admin")
+  localStorage.setItem("PASSWORD","admin")
+
   function handleSubmit(event){
     event.preventDefault()
     if(username=== "admin" && password === "admin"){
