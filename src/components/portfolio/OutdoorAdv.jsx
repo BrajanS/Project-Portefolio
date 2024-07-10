@@ -3,6 +3,9 @@ import '../../index.css'
 import homeOA from '../../images/OA/OA-home.png'
 import projectsOA from '../../images/OA/OA-projects.png'
 import toursOA from '../../images/OA/OA-Tours.png'
+import { MdOutlineWebAsset } from "react-icons/md";
+import { FaCode } from "react-icons/fa6";
+
 
 export default function OutdoorAdv() {
   const arrows = ["<",">"]
@@ -47,11 +50,19 @@ export default function OutdoorAdv() {
             onClick={()=>button2Clicked()}
           >{arrows[1]}</button>
         </div>
-        <div className='m-auto flex flex-col w-fit'>
-          <h2 className='ptH2'>Project Outdoor adventure:</h2>
-          <a className='ptA text-[blue] underline' href='https://github.com/BrajanS/Project-OA'>Ici pour voir le code</a>
-          <a className='ptA text-[blue] underline' href='https://brajans.github.io/Project-OA/index.html'>Ici pour visité le site</a>
-        </div>
+        <section className='flex justify-center'>
+          <div className='flex flex-col w-fit'>
+            <h2 className='ptH2'>Project Outdoor adventure:</h2>
+            <div className='flex gap-1'>
+              <FaCode color='black' size={24}/>
+              <a className='ptA text-[blue] underline' href='https://github.com/BrajanS/Project-OA'>Ici pour voir le code</a>
+            </div>
+            <div className='flex gap-1'>
+              <MdOutlineWebAsset color='black' size={24}/>
+              <a className='ptA text-[blue] underline' href='https://brajans.github.io/Project-OA/index.html'>Ici pour visité le site</a>
+            </div>
+          </div>
+        </section>
     </div>
   )
 }

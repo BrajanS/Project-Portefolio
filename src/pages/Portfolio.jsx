@@ -4,7 +4,7 @@ import Meteo from '../components/portfolio/Meteo'
 
 export default function Portfolio() {
   return (
-    <div className='flex gap-52 mx-5 mt-[15px]'>
+    <div className='flex justify-around mx-5 mt-[15px]'>
       <OutdoorAdv/>
       <Meteo/>
     </div>
