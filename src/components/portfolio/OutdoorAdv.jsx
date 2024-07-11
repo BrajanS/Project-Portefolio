@@ -5,7 +5,10 @@ import projectsOA from '../../images/OA/OA-projects.png'
 import toursOA from '../../images/OA/OA-Tours.png'
 import { MdOutlineWebAsset } from "react-icons/md";
 import { FaCode } from "react-icons/fa6";
-
+// Technos
+import { FaHtml5 } from "react-icons/fa6";
+import { FaCss3Alt } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 export default function OutdoorAdv() {
   const arrows = ["<",">"]
@@ -53,6 +56,23 @@ export default function OutdoorAdv() {
         <section className='flex justify-center'>
           <div className='flex flex-col w-fit'>
             <h2 className='ptH2'>Project Outdoor adventure:</h2>
+            <div>
+              <h3>Technologies utilisées:</h3>
+              <div className='flex justify-between'>
+                <div className='flex gap-1'>
+                  <FaHtml5 size={24} color='F56E16'/>
+                  <span>HTML</span>
+                </div>
+                <div className='flex gap-1'>
+                  <FaCss3Alt color='346DFA' size={24}/>
+                  <span>CSS</span>
+                </div>
+                <div className='flex gap-1'>
+                  <RiTailwindCssFill size={24} color='aqua'/>
+                  <span>Tailwind CSS</span>
+                </div>
+              </div>
+            </div>
             <div className='flex gap-1'>
               <FaCode color='black' size={24}/>
               <a className='ptA text-[blue] underline' href='https://github.com/BrajanS/Project-OA'>Ici pour voir le code</a>

@@ -9,6 +9,14 @@ import { IoWater } from "react-icons/io5";
 import { RiWeightFill } from "react-icons/ri";
 import { PiSunHorizonDuotone } from "react-icons/pi";
 import { TbSunset2 } from "react-icons/tb";
+// Technos
+import { FaHtml5 } from "react-icons/fa6";
+import { FaReact } from "react-icons/fa";
+import { RiJavascriptFill } from "react-icons/ri";
+import { FaNodeJs } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+
 
 const URL = "http://localhost:4000";
 
@@ -37,11 +45,38 @@ export default function Meteo() {
   return (
     <div>
       <div>
+        <img className="w-[400px] rounded-[10px]" src={ImgA} alt="meteo de la ville" />
         <h2 className="ptH2">Project Météo</h2>
-        <img className="w-[500px] rounded-[10px]" src={ImgA} alt="meteo de la ville" />
+        <h3>Technologies utilisées:</h3>
+        <div className="flex justify-between">
+          <div className="flex flex-col items-center">
+            <FaHtml5 size={24} color="F56E16"/>
+            <span className="text-[14px]">HTML</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <FaCss3Alt size={24} color="346DFA"/>
+            <span className="text-[14px]">CSS</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <RiTailwindCssFill size={24} color='aqua'/>
+            <span className="text-[14px]">Tailwind CSS</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <RiJavascriptFill size={24} color="gold" className="bg-[black]"/>
+            <span className="text-[14px]">Java script</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <FaReact size={24} color="0C96CA"/>
+            <span className="text-[14px]">React</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <FaNodeJs size={24} color="06A410"/>
+            <span className="text-[14px]">Node JS</span>
+          </div>
+        </div>
       </div>
-      <div className="flex flex-col gap-2">
-        <form onSubmit={Submit} className="flex gap-2 mt-5">
+      <div className="flex flex-col">
+        <form onSubmit={Submit} className="flex gap-2">
           <input
             type="text"
             name="city"
